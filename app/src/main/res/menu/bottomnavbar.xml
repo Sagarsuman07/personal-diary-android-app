@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/calender"
+        android:icon="@drawable/calender"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/plussign"
+        android:icon="@drawable/plussquare"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/userbtn"
+        android:icon="@drawable/userbtn"
+        tools:ignore="MenuTitle" />
+
+
+</menu>
