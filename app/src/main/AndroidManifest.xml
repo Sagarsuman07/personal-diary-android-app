@@ -13,14 +13,24 @@
         android:theme="@style/Theme.PosDiary"
         tools:targetApi="31">
         <activity
+            android:name=".profile"
+            android:exported="false"
+            android:parentActivityName=".dashboard"/>
+        <activity
+            android:name=".calenderr"
+            android:exported="false"
+            android:parentActivityName=".dashboard"/>
+        <activity
             android:name=".dashboard"
             android:exported="false" />
         <activity
             android:name=".passcode"
-            android:exported="false" />
+            android:exported="false"
+            android:noHistory="true"/>
         <activity
             android:name=".launcher"
-            android:exported="true">
+            android:exported="true"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
