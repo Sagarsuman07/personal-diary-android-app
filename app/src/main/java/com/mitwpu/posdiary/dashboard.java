@@ -13,7 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class dashboard extends AppCompatActivity
 {
-    ImageView img;
+    ImageView calender;
+    ImageView profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -22,17 +23,28 @@ public class dashboard extends AppCompatActivity
 
         setContentView(R.layout.activity_dashboard);
 
-        img=findViewById(R.id.imageView4);
+        calender=findViewById(R.id.imageView4);
+        profile=findViewById(R.id.imageView6);
 
-        img.setOnClickListener(new View.OnClickListener()
+        calender.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                Intent inte =new  Intent(dashboard.this,calenderr.class);
-                startActivity(inte);
+                Intent intent =new  Intent(dashboard.this,calenderr.class);
+                startActivity(intent);
 
             }
+        });
+
+        profile.setOnClickListener(new View.OnClickListener()
+        {
+           @Override
+           public void onClick(View view)
+           {
+               Intent intent=new Intent(dashboard.this,profile.class);
+               startActivity(intent);
+           }
         });
 
 
