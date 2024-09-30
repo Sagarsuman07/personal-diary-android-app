@@ -15,6 +15,7 @@ public class dashboard extends AppCompatActivity
 {
     ImageView calender;
     ImageView profile;
+    ImageView add;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -24,6 +25,7 @@ public class dashboard extends AppCompatActivity
         setContentView(R.layout.activity_dashboard);
 
         calender=findViewById(R.id.imageView4);
+        add=findViewById(R.id.imageView5);
         profile=findViewById(R.id.imageView6);
 
         calender.setOnClickListener(new View.OnClickListener()
@@ -45,6 +47,17 @@ public class dashboard extends AppCompatActivity
                Intent intent=new Intent(dashboard.this,profile.class);
                startActivity(intent);
            }
+        });
+
+
+        add.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent=new Intent(dashboard.this,editor.class);
+                startActivity(intent);
+            }
         });
 
 
